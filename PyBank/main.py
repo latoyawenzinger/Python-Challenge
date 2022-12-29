@@ -60,7 +60,7 @@ print("----------------------------")
 
 print(f"Total Months: {total_months}")
 print(f"Total: ${sum}")
-print(f"Averge Change: ${x}")
+print(f"Average Change: ${x}")
 print(f"Greatest Increase in Profits:  {bestmonth}  (${maxchange})")
 print(f"Greatest Decrease in Profits:  {worstmonth}  (${minchange})")
             
@@ -73,6 +73,6 @@ with open(analysis_file, "w") as outfile:
     outfile.write("----------------------------\n")  
     outfile.write(f"Total Months: {total_months}\n")
     outfile.write(f"Total: ${sum}\n")
-    outfile.write(f"Averge Change: ${x}\n")
+    outfile.write(f"Average Change: ${x}\n")
     outfile.write(f"Greatest Increase in Profits:  {bestmonth}  (${maxchange})\n")
     outfile.write(f"Greatest Decrease in Profits:  {worstmonth}  (${minchange})\n")
