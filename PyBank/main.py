@@ -75,4 +75,4 @@ with open(analysis_file, "w") as outfile:
     outfile.write(f"Total: ${sum}\n")
     outfile.write(f"Average Change: ${x}\n")
     outfile.write(f"Greatest Increase in Profits:  {bestmonth}  (${maxchange})\n")
-    outfile.write(f"Greatest Decrease in Profits:  {worstmonth}  (${minchange})\n")
+    outfile.write(f"Greatest Decrease in Profits:  {worstmonth}  (${minchange})")
