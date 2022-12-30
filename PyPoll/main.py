@@ -20,21 +20,17 @@ with open(poll_csv) as csvfile:
     CCS = []
     DD = []
     RAD = []
-    candidates = []
-    
 
     for row in csvreader:
-        #add candidate name in a list each time they are voted on
-        candidates.append(row[2])
         #calculate total votes overall
         votes_count.append((row[0]))
-        #if ballot says Charles, then add to CCS lit
+        #if ballot says Charles, add to CCS lit
         if row[2] == name1:
             CCS.append(row[2])
         #else, if ballot says Diane, add to DD list 
         elif row[2] == name2:
                 DD.append(row[2])
-        #else, if ballot say Raymon, add to RAD list
+        #else, if ballot says Raymon, add to RAD list
         elif row[2] == name3:
                 RAD.append(row[2])
 
